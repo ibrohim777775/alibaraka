@@ -37,6 +37,15 @@ const MediaStyles = styled.div`
         }
       }
     }
+    .about__inners {
+      flex-direction: column;
+      .about__right {
+        display: none;
+      }
+    }
+    .production__items {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
   }
 
   @media (min-width: 1200px) {

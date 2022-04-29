@@ -90,3 +90,4 @@ video {
 :root{
   --green: #037B35
 }
+@import '~antd/dist/antd.css';

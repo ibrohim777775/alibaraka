@@ -213,7 +213,7 @@ const StyledHeader = styled.div`
         width: 50vw;
         height: 461px;
         border: 1px solid var(--green);
-        top: -69px;
+        top: -44px;
         left: 0;
         border-top-left-radius: 240px;
         border-bottom-left-radius: 240px;

@@ -39,18 +39,19 @@ const Header = () => {
                   </NavLink>
                   <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className="nav-item">
-                      <NavLink
+                      {/* <NavLink
                         exact
-                        to="/"
+                        to="/production"
                         activeClassName="active"
                         className="nav-links"
                         onClick={click ? handleClick : null}
                       >
                         Products
-                      </NavLink>
+                      </NavLink> */}
+                      <a className="nav-links"  onClick={click ? handleClick : null} href="#products">Products</a>
                     </li>
                     <li className="nav-item">
-                      <NavLink
+                      {/* <NavLink
                         exact
                         to="/about"
                         activeClassName="active"
@@ -58,7 +59,8 @@ const Header = () => {
                         onClick={click ? handleClick : null}
                       >
                         About us
-                      </NavLink>
+                      </NavLink> */}
+                      <a className="nav-links"  onClick={click ? handleClick : null} href="#about">About us</a>
                     </li>
                     <li className="nav-item">
                       <NavLink
