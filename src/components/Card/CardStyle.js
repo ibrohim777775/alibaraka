@@ -9,7 +9,11 @@ const CardStyle = styled.div`
   box-sizing: border-box;
   gap: 25px;
   @media (max-width: 992px) {
-    padding: 17px;
+    padding: 12px;
+    gap: 10px;
+    & .title {
+      font-size: 1rem !important;
+    }
   }
   &:hover {
     border: 3px solid var(--green);
