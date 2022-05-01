@@ -319,6 +319,26 @@ const MainSytles = styled.main`
         padding: 0 40px 48px 40px;
         display: flex;
         flex-direction: column;
+        position: relative;
+        & .circle {
+          position: absolute;
+          width: 206px;
+          height: 206px;
+          border-radius: 50%;
+          background-color: #fed372;
+          right: -161px;
+          bottom: 69px;
+          @media (max-width: 992px) {
+            /* display: none; */
+            right: 0;
+            z-index: -56;
+          }
+        }
+        & .left {
+          position: absolute;
+          left: -131px;
+          top: -25px;
+        }
         .contact__title {
           font-family: "Gilroy";
           font-style: normal;

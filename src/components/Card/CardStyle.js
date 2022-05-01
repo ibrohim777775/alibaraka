@@ -8,6 +8,9 @@ const CardStyle = styled.div`
   border-radius: 8px;
   box-sizing: border-box;
   gap: 25px;
+  @media (max-width: 992px) {
+    padding: 17px;
+  }
   &:hover {
     border: 3px solid var(--green);
     padding: 15px 46px 15px 15px;

@@ -16,6 +16,8 @@ import {MdArrowForwardIos} from 'react-icons/md';
 import {AiOutlinePlus, AiOutlineMinus} from 'react-icons/ai';
 import portret from '../../assets/images/portret.png';
 import garden from '../../assets/images/garden.png';
+import square from "../../assets/images/square.png";
+
 
 const Main = () => {
   const {Panel} = Collapse;
@@ -214,6 +216,8 @@ const Main = () => {
           <div className="contact__wrapper">
             <img src={garden} alt="garden" className="contact__img" />
             <div className="contact__items">
+              <img src={square} alt="square" className="left" />
+              <div className="circle"></div>
               <h3 className="contact__title">Still are you <br /> hesitating?</h3>
               <p className="contact__desc">Your work is going to fill a large part of your life, and the only way to be truly satisfied.</p>
               <div className="form__top">

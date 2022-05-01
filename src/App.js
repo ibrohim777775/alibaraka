@@ -1,6 +1,7 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 import MediaStyles from "./media";
 
@@ -11,6 +12,7 @@ function App() {
         <MediaStyles>
           <Header />
           <Main />
+          <Footer />
         </MediaStyles>
       </div>
     </BrowserRouter>

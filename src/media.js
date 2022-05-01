@@ -83,6 +83,30 @@ const MediaStyles = styled.div`
     .contact__items {
       padding: 0 10px !important;
     }
+    footer {
+      height: auto;
+    }
+    .footer__top {
+      flex-direction: column;
+      gap: 30px;
+      .footer__left {
+        order: 2;
+        text-align: center;
+      }
+      .footer__right {
+        order: 1;
+      }
+    }
+    .footer__bottom {
+      flex-direction: column;
+      gap: 25px;
+      .bottom__right {
+        order: 1;
+      }
+      .bottom__text {
+        order: 2;
+      }
+    }
   }
 
   @media (min-width: 1200px) {
