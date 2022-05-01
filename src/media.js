@@ -48,15 +48,40 @@ const MediaStyles = styled.div`
     }
     .production__items,
     .bottom__items {
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
     }
     .bottom__left {
       display: flex;
       justify-content: center;
       margin-bottom: 75px;
+      width: 100%;
       .bottom__info {
         left: 0 !important;
+        width: 200px !important;
+        height: 250px !important;
       }
+      .bottom__link {
+        left: 33%;
+        bottom: -25px !important;
+        padding: 0 !important;
+        width: 150px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .bottom__img {
+        width: 100%;
+      }
+    }
+    .form__top {
+      flex-direction: column;
+      & .contact__input {
+        width: 100%;
+      }
+    }
+    .contact__items {
+      padding: 0 10px !important;
     }
   }
 

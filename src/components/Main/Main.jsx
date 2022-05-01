@@ -15,6 +15,7 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import {MdArrowForwardIos} from 'react-icons/md';
 import {AiOutlinePlus, AiOutlineMinus} from 'react-icons/ai';
 import portret from '../../assets/images/portret.png';
+import garden from '../../assets/images/garden.png';
 
 const Main = () => {
   const {Panel} = Collapse;
@@ -207,6 +208,25 @@ const Main = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section id="contact">
+        <div className="container">
+          <div className="contact__wrapper">
+            <img src={garden} alt="garden" className="contact__img" />
+            <div className="contact__items">
+              <h3 className="contact__title">Still are you <br /> hesitating?</h3>
+              <p className="contact__desc">Your work is going to fill a large part of your life, and the only way to be truly satisfied.</p>
+              <div className="form__top">
+                <input type="text" className='contact__input' placeholder='Enter your name' />
+                <input type="tel" className='contact__input' placeholder='Enter phone tel' />
+              </div>
+              <textarea name="sucject" className='contact__input' placeholder='Enter your subject' id="subject" cols="30" rows="10"></textarea>
+              <button className='contact__btn'>SEND MESSAGE</button>
+            </div>
+            
+          </div>
+        </div>
+        
       </section>
 
     </MainSytles>

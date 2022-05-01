@@ -304,6 +304,93 @@ const MainSytles = styled.main`
       }
     }
   }
+  & #contact {
+    margin-top: 14rem;
+    margin-bottom: 10.313rem;
+    .contact__wrapper {
+      margin: 0 auto;
+      max-width: 540px;
+      box-shadow: 0px 8px 28px rgba(83, 83, 83, 0.15);
+      border-radius: 15px;
+      .contact__img {
+        width: 100%;
+      }
+      .contact__items {
+        padding: 0 40px 48px 40px;
+        display: flex;
+        flex-direction: column;
+        .contact__title {
+          font-family: "Gilroy";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 29px;
+          line-height: 28px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #000000;
+          margin: 40px 22px;
+        }
+        .contact__desc {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          text-align: center;
+          color: #000000;
+        }
+        .form__top {
+          display: flex;
+          gap: 25px;
+          margin-top: 1.375rem;
+          margin-bottom: 2.438rem;
+          & .contact__input {
+            /* line-height: 60px; */
+            flex: 1;
+          }
+        }
+        .contact__input {
+          outline: none;
+          background: #f8f8f8;
+          border: 1px solid #e7e7e7;
+          box-sizing: border-box;
+          border-radius: 6px;
+          font-family: "Gilroy";
+          font-style: normal;
+          font-size: 15px;
+          color: #000000;
+          padding: 10px 14px;
+        }
+        & textarea {
+          height: 140px;
+          resize: none;
+          margin-bottom: 2.625rem;
+        }
+        & .contact__btn {
+          background: #037b35;
+          border-radius: 30px;
+          border: none;
+          outline: none;
+          height: 52px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: "Gilroy";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 15px;
+          color: #ffffff;
+          transition: all 0.2s;
+          &:hover {
+            cursor: pointer;
+            transition: all 0.2s;
+
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
 `;
 
 export default MainSytles;
