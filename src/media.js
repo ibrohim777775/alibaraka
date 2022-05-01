@@ -12,6 +12,9 @@ const MediaStyles = styled.div`
     .container {
       max-width: 768px;
     }
+    .blog__right {
+      width: 100% !important;
+    }
   }
 
   @media (max-width: 992px) {
@@ -43,8 +46,17 @@ const MediaStyles = styled.div`
         display: none;
       }
     }
-    .production__items {
+    .production__items,
+    .bottom__items {
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+    .bottom__left {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 75px;
+      .bottom__info {
+        left: 0 !important;
+      }
     }
   }
 
