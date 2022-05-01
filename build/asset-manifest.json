@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.16066152.css",
-    "main.js": "/static/js/main.ebccbd1c.js",
+    "main.css": "/static/css/main.d13ccaa9.css",
+    "main.js": "/static/js/main.86c02753.js",
     "static/media/header__bg.png": "/static/media/header__bg.ce613fa54ef6726a3934.png",
     "static/media/CLAAS Dominator 208 Combine working video.mp4": "/static/media/CLAAS Dominator 208 Combine working video.0f5ddc1ca3a2e09bd2e5.mp4",
     "static/media/product_4.png": "/static/media/product_4.6cc29706ba0e7535bd28.png",
@@ -28,11 +28,11 @@
     "static/media/logos_slack.svg": "/static/media/logos_slack.2b8944a8fa0efaa2733a4f4c45280caa.svg",
     "static/media/logos_google.svg": "/static/media/logos_google.b9193c8d04c0b2b50e26af8257703d08.svg",
     "index.html": "/index.html",
-    "main.16066152.css.map": "/static/css/main.16066152.css.map",
-    "main.ebccbd1c.js.map": "/static/js/main.ebccbd1c.js.map"
+    "main.d13ccaa9.css.map": "/static/css/main.d13ccaa9.css.map",
+    "main.86c02753.js.map": "/static/js/main.86c02753.js.map"
   },
   "entrypoints": [
-    "static/css/main.16066152.css",
-    "static/js/main.ebccbd1c.js"
+    "static/css/main.d13ccaa9.css",
+    "static/js/main.86c02753.js"
   ]
 }

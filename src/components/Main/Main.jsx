@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Link, Route } from 'react-router-dom/cjs/react-router-dom.min';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import MainSytles from './MainStyle';
 import { Carousel, Collapse } from 'antd';
 import products from '../../assets/products';
@@ -58,20 +60,26 @@ const Main = () => {
       }
     ]
     };
+    useEffect(() => {
+      AOS.init({
+        duration: 2000
+      });
+      AOS.refresh();
+    }, []);
   return (
     <MainSytles>
       <div className="top"></div>
       <section id='products' className="production">
         <div className="container">
-          <h2 className="production__title">
+          <h2 className="production__title aos-item " data-aos="fade-down-right" >
             our production
           </h2>
-          <p className="production__desc">
+          <p className="production__desc aos-item" data-aos="fade-up-right">
             "Your work is going to fill a large part of your life, and the only way to <br /> be truly satisfied is to do what you believe is great work"
           </p>
           <div className="production__items">
               {products.map((item, index) => (
-                <div key={index} className="production__card">
+                <div key={index} className="production__card aos-item" data-aos="fade-left" data-aos-anchor-placement={"top-bottom"}>
                     <Card  card={item}/>
                 </div>
               ))}
@@ -82,10 +90,12 @@ const Main = () => {
         <div className="container">
           <div className="about__inners">
             <div className="about__left">
-              <h2 className="about__title">
+              <h2 className="about__title aos-item" data-aos="fade-right">
                 little ABout our company 
               </h2>
-              <p className="about__desc">
+              <p className="about__desc aos-item" data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine">
                 "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do."
               </p>
               <div className="about__more">
@@ -142,7 +152,7 @@ const Main = () => {
         <div className="container">
           <div className="blog__top">
             <div className="blog__right">
-              <h3 className="blog__title">See why we are trusted the world over</h3>
+              <h3 className="blog__title aos-item" data-aos="zoom-in">See why we are trusted the world over</h3>
               <p className="blog__desc">The first rule of any technology used in a business is that automation applied to an efficient operation will magnify the efficiency.</p>
               <div className="accordion">
                 <Collapse accordion  expandIconPosition='right' expandIcon={({isActive})=> isActive ? <AiOutlineMinus className='acc__icon'/> : <AiOutlinePlus className='acc__icon'/>  }>
@@ -181,7 +191,12 @@ const Main = () => {
                 </div>
                 <Link className='bottom__link' to='/'>more stories</Link>
               </div>
-              <div className="bottom__right">
+              <div 
+                className="bottom__right aos-item" 
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
                 <h3 className="bottom__right-title">
                   Other successful <br /> stories
                 </h3>
